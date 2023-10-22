@@ -331,58 +331,98 @@ public static void insertarorden(Connection connection, String mesaosilla, Strin
 }
 
 //codigo que use en heidisql para crear las tablas
+
 Crear la tabla MesaSilla
+
 CREATE TABLE MesaSilla (
+
     id INT AUTO_INCREMENT PRIMARY KEY,
+    
     estilo VARCHAR(255),
+    
     color VARCHAR(255),
+    
     material VARCHAR(255)
 );
 
 -- Crear la tabla InventarioMateriales
+
 CREATE TABLE InventarioMateriales (
+
     id INT AUTO_INCREMENT PRIMARY KEY,
+    
     cantidad INT,
+    
     nombre VARCHAR(255),
+    
     medidas VARCHAR(255)
+    
 );
 
 -- Crear la tabla MaterialesFabricacion
+
 CREATE TABLE MaterialesFabricacion (
+
     id INT AUTO_INCREMENT PRIMARY KEY,
+    
     nombre VARCHAR(255),
+    
     cantidad INT,
+    
     medidas VARCHAR(255)
 );
 
 -- Crear la tabla Facturacion
+
 CREATE TABLE Facturacion (
+
     id INT AUTO_INCREMENT PRIMARY KEY,
+    
     nit VARCHAR(255),
+    
     nombre VARCHAR(255),
+    
     descripcion VARCHAR(255)
 );
 
+
 -- Crear la tabla VentasEmpleado
+
 CREATE TABLE VentasEmpleado (
+
     id INT AUTO_INCREMENT PRIMARY KEY,
+    
     nombre VARCHAR(255),
+    
     empleado VARCHAR(255),
+    
     comision VARCHAR(255)
+    
 );facturacion
 
 -- Crear la tabla Producto
+
 CREATE TABLE Producto (
+
     id INT AUTO_INCREMENT PRIMARY KEY,
+    
     codigo VARCHAR(255),
+    
     descripcion VARCHAR(255),
+    
     precio VARCHAR(255)
 );
 
 -- Crear la tabla Orden
+
 CREATE TABLE Orden (
+
     id INT AUTO_INCREMENT PRIMARY KEY,
+    
     numeroOrden VARCHAR(255),
+    
     fecha VARCHAR(255),
+    
     vendedor VARCHAR(255)
+    
 );fabricafabricafabrica
